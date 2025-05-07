@@ -1638,11 +1638,11 @@ footer {
 }
 
 .jacket {
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   padding: 15px;
   width: 250px;
   text-align: center;
-  background: #f9f9f9;
+  background-image: url("assets/img/cuerpo/plumiferos/daily.jpeg");
 }
 
 .jacket img {
