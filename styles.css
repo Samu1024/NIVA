@@ -1684,3 +1684,64 @@ footer {
   border-radius: 5px;
   font-weight: bold;
 }
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-image: url("assets/img/cuerpo/articulos/portada.jpeg");
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #c9a227;
+  outline: none;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #c9a227;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c9a227;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  main h2 {
+    font-size: 1.5rem;
+  }
+}
