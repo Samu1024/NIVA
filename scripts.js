@@ -140,3 +140,45 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//***barra de busqueda */
+const searchIcon = document.querySelector('.search_trigger');
+  const searchBar = document.querySelector('.search_bar_container');
+  const searchForm = document.getElementById('searchForm');
+  const searchInput = document.getElementById('searchInput');
+  
+
+  // Mostrar la barra al hacer clic en el icono de buscar
+  searchIcon.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchBar.style.display = searchBar.style.display === 'none' ? 'block' : 'none';
+    searchInput.focus();
+  });
+
+  // Buscar y redirigir
+  searchForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const query = searchInput.value.toLowerCase();
+
+    // Puedes personalizar estos productos y páginas según tu sitio
+    const productos = {
+      'ferox': 'ferox.html',
+      'excito': 'excito.html',
+      'vita': 'vita.html',
+      'productos':'plumiferos.html',
+      'plumiferos':'plumiferos.html',
+      'daily':'plumiferos.html',
+      'sport':'plumiferos.html',
+      
+    
+    };
+
+    for (let clave in productos) {
+      if (query.includes(clave)) {
+        window.location.href = productos[clave];
+        return;
+      }
+    }
+
+    alert('Producto no encontrado.');
+  });

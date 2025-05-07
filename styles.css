@@ -1746,3 +1746,32 @@ form button:hover {
     font-size: 1.5rem;
   }
 }
+
+/*----barra de busqueda---*/
+
+.search_bar_container {
+  position: absolute;
+  top: 80px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 60%;
+  z-index: 1000;
+  background: none;        /* <-- elimina fondo */
+  box-shadow: none;        /* <-- elimina sombra */
+  padding: 0;              /* <-- elimina espacio interno */
+}
+
+#searchForm {
+  display: flex;
+  width: 100%;
+}
+
+
+#searchInput {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+}
