@@ -116,31 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function mostrarChaquetas(tipo) {
-  const daily = document.getElementById('chaquetas-daily');
-  const sport = document.getElementById('chaquetas-sport');
-
-  if (tipo === 'daily') {
-    daily.classList.remove('hidden');
-    sport.classList.add('hidden');
-    daily.scrollIntoView({ behavior: 'smooth' });
-  } else if (tipo === 'sport') {
-    sport.classList.remove('hidden');
-    daily.classList.add('hidden');
-    sport.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".ver-mas").forEach(boton => {
-    boton.addEventListener("click", function () {
-      const detalle = this.nextElementSibling;
-      detalle.classList.toggle("hidden");
-      this.textContent = detalle.classList.contains("hidden") ? "Ver más" : "Ver menos";
-    });
-  });
-});
-
 //***barra de busqueda */
 const searchIcon = document.querySelector('.search_trigger');
   const searchBar = document.querySelector('.search_bar_container');
@@ -182,3 +157,5 @@ const searchIcon = document.querySelector('.search_trigger');
 
     alert('Producto no encontrado.');
   });
+
+  

@@ -877,8 +877,15 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  height: 90vh;
 }
-
+.columna a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
 .texto-superpuesto {
   position: absolute;
   bottom: 0;
@@ -1481,7 +1488,7 @@ footer {
   align-items: center;
   gap: 4rem;
   padding: 2rem;
-  background-color: #edebe2;
+  background-color: #ffffff;
   margin-top: 9rem;
   margin-bottom: 2rem;
   max-width: 1200px;
@@ -1627,6 +1634,7 @@ footer {
     padding: 0.5rem 1rem;
   }
 }
+
 
 .chaquetas {
   display: flex;
@@ -1774,4 +1782,36 @@ form button:hover {
   border: 1px solid #ccc;
   border-radius: 30px;
   outline: none;
+}
+/*productos daily y sport*/
+.categoria-productos {
+  padding: 2rem;
+  text-align: center;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  
+}
+
+.producto {
+  max-width: 400px;
+  width: 900px;
+  border: 2px solid #c9a227; /* Agrega un borde dorado fino */
+  flex-direction: column;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px; /* Redondea las esquinas del borde */
+  transition: transform 0.3s ease; /* Agrega una transición suave cuando se modifica el tamaño */
+  object-fit: contain; /* Asegura que la imagen se ajuste proporcionalmente sin desbordarse */
+}
+
+.producto img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen ligeramente al pasar el ratón */
 }
