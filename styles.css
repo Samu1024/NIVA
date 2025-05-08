@@ -568,7 +568,7 @@ footer {
 /* ******** BANNER DE HISTORIA ******** */
 .historia_banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("assets/img/cuerpo/historia/portada.jpeg") center/cover no-repeat;
+    url("assets/img/cuerpo/historia/banneresencia.jpeg") center/cover no-repeat;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -994,7 +994,7 @@ footer {
   position: relative;
   height: 50vh;
   overflow: hidden;
-  background: url("assets/img/cuerpo/blog/portada.jpeg") no-repeat center center/cover;
+  background: url("assets/img/cuerpo/blog/historiabanner.jpeg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1488,7 +1488,7 @@ footer {
   align-items: center;
   gap: 4rem;
   padding: 2rem;
-  background-color: #ffffff;
+  background-color: #edebe2;
   margin-top: 9rem;
   margin-bottom: 2rem;
   max-width: 1200px;
