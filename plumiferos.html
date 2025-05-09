@@ -27,6 +27,11 @@
         </nav>
         <!-- Enlaces adicionales con iconos (cesta, búsqueda, cuenta) -->
         <div class="header_container_icons">
+          <div class="search_bar_container" style="display: none;">
+            <form id="searchForm">
+              <input type="text" id="searchInput" placeholder="Buscar producto..." />
+            </form>
+          </div>
           <a class="header_link" href="index.html" alt="Cesta de compras">
             <svg
               class="header_icon"
@@ -41,7 +46,7 @@
               />
             </svg>
           </a>
-          <a class="header_link" href="index.html" alt="Buscar">
+          <a class="header_link search_trigger" href="#" alt="Buscar">
             <svg
               class="header_icon"
               xmlns="http://www.w3.org/2000/svg"

@@ -569,12 +569,11 @@ footer {
 .historia_banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("assets/img/cuerpo/historia/banneresencia.jpeg") center/cover no-repeat;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  /* text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.7); */
+  text-align: center; 
 }
 
 .historia_banner_content {
@@ -638,8 +637,8 @@ footer {
 }
 
 .historia_container {
-  max-width: 80%;
-  margin: 2rem auto;
+  max-width: 1000%;
+  margin-left: 160px;
 }
 
 .historia_section {
@@ -997,7 +996,7 @@ footer {
   background: url("assets/img/cuerpo/blog/historiabanner.jpeg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   color: white;
   text-align: center;
 }
@@ -1717,7 +1716,7 @@ footer {
   font-weight: bold;
 }
 
-form {
+.formulario {
   max-width: 600px;
   margin: 0 auto;
   background-image: url("assets/img/cuerpo/articulos/portada.jpeg");
@@ -1788,7 +1787,7 @@ form button:hover {
   transform: translateX(50%);
   width: 60%;
   z-index: 1000;
-  background: none;        /* <-- elimina fondo */
+  background-color: none;        /* <-- elimina fondo */
   box-shadow: none;        /* <-- elimina sombra */
   padding: 0;              /* <-- elimina espacio interno */
 }
@@ -1883,6 +1882,7 @@ form button:hover {
   object-fit: cover;
   
 }
+
 .fila img {
   width: 100%;
   height: 300px; /* Puedes ajustar este valor según tu diseño */

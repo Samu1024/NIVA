@@ -28,6 +28,11 @@
         </nav>
         <!-- Enlaces adicionales con iconos (cesta, búsqueda, cuenta) -->
         <div class="header_container_icons">
+          <div class="search_bar_container" style="display: none;">
+            <form id="searchForm">
+              <input type="text" id="searchInput" placeholder="Buscar producto..." />
+            </form>
+          </div>
           <a class="header_link" href="index.html" alt="Cesta de compras">
             <svg
               class="header_icon"
@@ -42,7 +47,7 @@
               />
             </svg>
           </a>
-          <a class="header_link" href="index.html" alt="Buscar">
+          <a class="header_link search_trigger" href="#" alt="Buscar">
             <svg
               class="header_icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +100,6 @@
               <p style="color: #202559;">Excelencia en el mundo del lujo a través de la combinacion estética,tecnología y comodidad.</p>
             </div>
           </div>
-        
           <div class="fila">
             <div class="texto">
               <h2 style="color: #c9a227;">Coinonía</h2>
@@ -103,11 +107,12 @@
                 Donde el diseño y la funcionalidad convergen en perfecta armonía.
               </p>
             </div>
-            <div class="imagen">
+            <div class="fila">
+            <div class="imagen2">
               <img src="assets/img/cuerpo/historia/coinonia.jpeg" alt="Imagen 2">
             </div>
           </div>
-        
+          </div>
           <div class="fila">
             <div class="imagen">
               <img src="assets/img/cuerpo/historia/fundamentos.jpeg" alt="Imagen 3">
@@ -127,6 +132,7 @@
               <img src="assets/img/cuerpo/historia/esencia.jpeg" alt="Imagen 4">
             </div>
           </div>
+          
         </section>
     </main>
     <!-- ******** PIE DE PÁGINA ******** -->

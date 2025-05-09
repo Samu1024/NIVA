@@ -26,6 +26,11 @@
         </nav>
         <!-- Enlaces adicionales con iconos (cesta, búsqueda, cuenta) -->
         <div class="header_container_icons">
+          <div class="search_bar_container" style="display: none;">
+            <form id="searchForm">
+              <input type="text" id="searchInput" placeholder="Buscar producto..." />
+            </form>
+          </div>
           <a class="header_link" href="index.html" alt="Cesta de compras">
             <svg
               class="header_icon"
@@ -54,7 +59,7 @@
               />
             </svg>
           </a>
-          <a class="header_link" href="index.html" alt="Cuenta">
+          <a class="header_link search_trigger" href="#" alt="Cuenta">
             <svg
               class="header_icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +81,7 @@
     <br><br><br><br><br>
     <h2 style="text-align: center;">Reserva tu cita aquí</h2>
     <br>
-    <form action="enviar_cita.php" method="POST">
+    <form  class="formulario" action="enviar_cita.php" method="POST">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required><br><br>
 

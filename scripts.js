@@ -144,6 +144,9 @@ const searchIcon = document.querySelector('.search_trigger');
       'plumiferos':'plumiferos.html',
       'daily':'plumiferos.html',
       'sport':'plumiferos.html',
+      'esencia':'esencia.html',
+      'historias':'historias.html',
+
       
     
     };
