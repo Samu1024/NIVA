@@ -615,6 +615,11 @@ footer {
   top: 0;
 }
 
+.imagen{
+display: flex;
+height: 600px;
+}
+
 /* Contenido */
 .esencia-contenido {
   flex: 1;
