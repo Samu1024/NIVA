@@ -568,7 +568,7 @@ footer {
 /* ******** BANNER DE HISTORIA ******** */
 .historia_banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("assets/img/cuerpo/historia/banneresencia.jpeg") center/cover no-repeat;
+    url("assets/img/cuerpo/historia/banner.jpeg") center/cover no-repeat;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -580,6 +580,7 @@ footer {
   background: none;
   padding: 2.5rem 3rem;
   border-radius: 12px;
+  
 }
 
 /* ******** ESTILOS SECCIONES DE HISTORIA ******** */
@@ -603,6 +604,7 @@ footer {
   padding: 20px;
   position: relative;
   opacity: 0; /* Inicialmente invisible */
+  
 }
 
 /* Barra vertical */
@@ -625,6 +627,7 @@ height: 600px;
 .esencia-contenido {
   flex: 1;
   margin-left: 24px;
+  
 }
 
 .esencia-contenido h1 {
@@ -1042,7 +1045,7 @@ height: 600px;
 .blog_container {
   padding: 2em 1em;
   /* background-color: #f5f5f5; */
-  background-color: #edebe2;
+   background: url("assets/img/cuerpo/blog/Mockup.zip\ -\ 3.png")
   
   
 }
@@ -1060,10 +1063,9 @@ height: 600px;
 .blog_post {
   position: relative;
   width: 30vw;
-  height: 500px;
+  height: 600px;
   margin: 2%;
   overflow: hidden;
-  border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
