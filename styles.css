@@ -1911,3 +1911,11 @@ form button:hover {
     max-width: 100%;
   }
 }
+
+/*carrito*/
+
+.opcion_color.active,
+.opcion_talla.active {
+    border: 2px solid #202559;
+    background-color: #c9a227;
+}
