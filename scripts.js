@@ -142,11 +142,10 @@ const searchIcon = document.querySelector('.search_trigger');
       'vita': 'vita.html',
       'productos':'plumiferos.html',
       'plumiferos':'plumiferos.html',
-      'daily':'plumiferos.html',
-      'sport':'plumiferos.html',
+      'daily':'daily.html',
+      'sport':'sport.html',
       'esencia':'esencia.html',
       'historias':'historias.html',
-
       
     
     };
@@ -162,7 +161,7 @@ const searchIcon = document.querySelector('.search_trigger');
   });
 
   //carrito de compras
-
+                           
   // Función para obtener el carrito del almacenamiento local
 function obtenerCarrito() {
     let carrito = localStorage.getItem('carrito');
@@ -172,7 +171,7 @@ function obtenerCarrito() {
         return [];
     }
 }
-
+ 
 // Función para guardar el carrito en el almacenamiento local
 function guardarCarrito(carrito) {
     localStorage.setItem('carrito', JSON.stringify(carrito));

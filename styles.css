@@ -1532,12 +1532,14 @@ footer {
   flex: 1;
   max-width: 50%;
   min-width: 300px;
+  
 }
 
 .producto_imagen {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  
 }
 
 .producto_info {
@@ -1919,3 +1921,4 @@ form button:hover {
     border: 2px solid #202559;
     background-color: #c9a227;
 }
+

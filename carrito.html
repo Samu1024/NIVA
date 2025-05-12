@@ -8,21 +8,26 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <script defer src="scripts.js"></script>
-    <title>NIVA - Ferox</title>
+    <title>NIVA - Inicio</title>
   </head>
-  <body class="ferox_body productos_body">
+  <body>
     <!-- ******** ENCABEZADO ******** -->
+    <!-- Contenedor principal del encabezado, incluye logo, navegación y enlaces-->
     <header>
       <div class="header_container">
+        <!-- Logo del sitio -->
         <div class="header_logo">
           <a href="index.html"> <img src="assets/img/cabecera/logo.png" alt="Logo de NIVA" /> </a>
         </div>
+        <!-- Navegación principal -->
         <nav class="header_nav">
           <a class="header_link" href="esencia.html">Esencia</a>
           <a class="header_link" href="plumiferos.html">Plumíferos</a>
           <a class="header_link" href="historias.html">Historias</a>
         </nav>
+        <!-- Enlaces adicionales con iconos (cesta, búsqueda, cuenta) -->
         <div class="header_container_icons">
+
           <div class="search_bar_container" style="display: none;">
             <form id="searchForm">
               <input type="text" id="searchInput" placeholder="Buscar producto..." />
@@ -74,54 +79,23 @@
       </div>
     </header>
 
-    <!-- ******** CUERPO DE LA PÁGINA ******** -->
-    <main class="producto_container">
-      <div class="producto_imagen_container">
-        <img class="producto_imagen" src="assets/img/cuerpo/seccion_productos/producto_1.jpeg" alt="Ferox" />
-      </div>
-      <div class="producto_info">
-        <h1 class="producto_titulo">Ferox</h1>
-        <p class="producto_descripcion">
-          Descubre la elegancia y comodidad de nuestra chaqueta Ferox, diseñada para aquellos que buscan estilo y
-          funcionalidad.
-        </p>
-          
-        <!-- Opciones de color -->
-        <div class="producto_opciones">
-          <h3>Color:</h3>
-          <div class="opciones_color">
-            <button class="opcion_color" data-color="negro">Negro</button>
-            <button class="opcion_color" data-color="gris">Gris</button>
-            <button class="opcion_color" data-color="azul">Azul</button>
-          </div>
-        </div>
+     <!-- ******** CUERPO DE LA PÁGINA DEL CARRITO ******** -->
+    <main class="carrito_container">
+      <h1>Tu Carrito de Compras</h1>
 
-        <!-- Opciones de talla --> 
-        <div class="producto_opciones">
-          <h3>Talla:</h3>
-          <div class="opciones_talla">
-            <button class="opcion_talla" data-talla="s">S</button>
-            <button class="opcion_talla" data-talla="m">M</button>
-            <button class="opcion_talla" data-talla="l">L</button>
-            <button class="opcion_talla" data-talla="xl">XL</button>
-          </div>
-        </div>
+      <div id="carritoProductos"></div>
 
-        <!-- Precio y botón de compra -->
-        <p class="producto_precio">€ 1.150,00</p>
-        <button class="producto_boton">Añadir al carrito</button>
-        <!-- Botón para ver el carrito -->
-     <a href="carrito.html" class="header_link"></a>
-    <svg class="header_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
-        <!-- SVG del carrito aquí -->
-    </svg>
-    </a>
+      <div id="carritoTotal">
+        <p>Total: <span id="totalCarrito">€0.00</span></p>
+        <button id="procederPago">Proceder al pago</button>
       </div>
     </main>
 
     <!-- ******** PIE DE PÁGINA ******** -->
+    <!-- Contenedor del pie de página con varias secciones de contacto, atención, corporativo y legal -->
     <footer>
       <div class="footer_container">
+        <!-- Sección de Contacto -->
         <div class="footer_seccion footer_contacto">
           <h3>Contacta</h3>
           <p>
@@ -140,25 +114,29 @@
             </a>
           </p>
         </div>
+        <!-- Sección de Atención al Cliente -->
         <div class="footer_seccion footer_atencion">
           <h3>Atención al Cliente</h3>
           <p><a href="index.html">Preguntas frecuentes</a></p>
           <p><a href="index.html">Rastrear pedidos y solicitudes</a></p>
           <p><a href="index.html">Servicios de la Boutique</a></p>
-          <p><a href="index.html">Verificación del código del producto</a></p>
+          <p><a href="index.html">Verificación del código del producto</a></p> 
         </div>
+        <!-- Sección de Corporativo -->
         <div class="footer_seccion footer_corporativo">
           <h3>Corporativo</h3>
           <p><a href="index.html">Sostenibilidad</a></p>
           <p><a href="index.html">NIVA Materials</a></p>
         </div>
+        <!-- Sección de Legal -->
         <div class="footer_seccion footer_legal">
           <h3>Legal</h3>
           <p><a href="index.html">Política De Privacidad Y Cookies</a></p>
           <p><a href="index.html">Configuración De Cookies</a></p>
-          <p><a href="index.html">Área Legal</a></p>
+          <p><a href="index.html">Àrea Legal</a></p>
         </div>
       </div>
+      <!-- Sección de Redes Sociales -->
       <div class="footer_redes">
         <a href="index.html">
           <img class="footer_redes_icon" src="assets/img/pie/redes/facebook.png" alt="Facebook" />
@@ -170,7 +148,9 @@
           <img class="footer_redes_icon" src="assets/img/pie/redes/x.png" alt="Twitter" />
         </a>
       </div>
+      <!-- Sección de Copyright -->
       <div class="footer_copyright">&copy; 2024 NIVA. Todos los derechos reservados.</div>
     </footer>
   </body>
 </html>
+
