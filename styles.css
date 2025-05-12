@@ -607,20 +607,12 @@ footer {
   
 }
 
-/* Barra vertical */
-.esencia-barra-vertical {
-  width: 3px;
-  background-color: #aca9a1;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+/*margenes*/
+
 
 .imagen{
 display: flex;
 height: 600px;
-
 }
 
 
@@ -649,7 +641,10 @@ height: 600px;
 .historia_container {
   max-width: 1000%;
   margin-left: 160px;
+  
 }
+
+
 
 .historia_section {
   display: flex;
