@@ -241,4 +241,3 @@ document.querySelector('.producto_boton').addEventListener('click', agregarAlCar
 
 // Inicializar la actualización del carrito al cargar la página
 actualizarCarrito();
-  
