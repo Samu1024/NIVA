@@ -28,7 +28,7 @@
               <input type="text" id="searchInput" placeholder="Buscar producto..." />
             </form>
           </div>
-          <a class="header_link" href="index.html" alt="Cesta de compras">
+          <a class="header_link" href="carrito.html" alt="Cesta de compras">
             <svg
               class="header_icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -109,8 +109,58 @@
         <!-- Precio y botón de compra -->
         <p class="producto_precio">€ 875,00</p>
         <button class="producto_boton">Añadir al carrito</button>
+
+        
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const botonCarrito = document.querySelector(".producto_boton");
+    botonCarrito.addEventListener("click", () => {
+      const nombre = document.querySelector(".producto_titulo").innerText;
+      const precio = document.querySelector(".producto_precio").innerText;
+      const imagen = document.querySelector(".producto_imagen").src;
+      const color = document.querySelector(".opcion_color.active")?.dataset.color || "sin seleccionar";
+      const talla = document.querySelector(".opcion_talla.active")?.dataset.talla || "sin seleccionar";
+
+      const producto = { nombre, precio, imagen, color, talla };
+
+      // Obtener carrito actual
+      let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+      // Agregar nuevo producto
+      carrito.push(producto);
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+
+      mostrarNotificacion("Producto añadido al carrito");
+    });
+
+    // Marcar color y talla seleccionados
+    document.querySelectorAll(".opcion_color").forEach(btn =>
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".opcion_color").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+      })
+    );
+
+    document.querySelectorAll(".opcion_talla").forEach(btn =>
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".opcion_talla").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+      })
+    );
+  });
+</script>
+
+<style>
+  .opcion_color.active, .opcion_talla.active {
+    border: 2px solid #333;
+    background-color: #c9a227;
+  }
+</style>
+
       </div>
     </main>
+
+    
 
     <!-- ******** PIE DE PÁGINA ******** -->
     <footer>

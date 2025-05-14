@@ -160,84 +160,20 @@ const searchIcon = document.querySelector('.search_trigger');
     alert('Producto no encontrado.');
   });
 
-  //carrito de compras
-                           
-  // Función para obtener el carrito del almacenamiento local
-function obtenerCarrito() {
-    let carrito = localStorage.getItem('carrito');
-    if (carrito) {
-        return JSON.parse(carrito);
-    } else {
-        return [];
-    }
-}
- 
-// Función para guardar el carrito en el almacenamiento local
-function guardarCarrito(carrito) {
-    localStorage.setItem('carrito', JSON.stringify(carrito));
-}
+  function mostrarNotificacion(mensaje) {
+  const noti = document.createElement("div");
+  noti.className = "notificacion-carrito";
+  noti.innerText = mensaje;
 
-// Función para actualizar el carrito en la interfaz de usuario
-function actualizarCarrito() {
-    const carrito = obtenerCarrito();
-    let total = 0;
+  document.body.appendChild(noti);
 
-    // Aquí puedes modificar el código para mostrar el carrito en alguna parte de tu página.
-    // Este ejemplo solo actualiza el localStorage con el total.
+  setTimeout(() => {
+    noti.classList.add("mostrar");
+  }, 100); // animación de entrada
 
-    carrito.forEach(item => {
-        total += parseFloat(item.precio.replace('€', '').replace(',', '.'));
-    });
-
-    // Actualizar el total en el carrito (esto es solo un ejemplo).
-    console.log('Total Carrito:', total);
+  setTimeout(() => {
+    noti.classList.remove("mostrar");
+    setTimeout(() => noti.remove(), 300); // espera a que se quite la animación
+  }, 3000);
 }
 
-// Función para añadir un producto al carrito
-function agregarAlCarrito() {
-    const nombre = document.querySelector('.producto_titulo').textContent;
-    const precio = document.querySelector('.producto_precio').textContent;
-    const color = document.querySelector('.opciones_color .opcion_color.active')?.getAttribute('data-color');
-    const talla = document.querySelector('.opciones_talla .opcion_talla.active')?.getAttribute('data-talla');
-
-    if (!color || !talla) {
-        alert("Por favor, selecciona un color y una talla.");
-        return;
-    }
-
-    const producto = {
-        nombre,
-        precio,
-        color,
-        talla
-    };
-
-    const carrito = obtenerCarrito();
-    carrito.push(producto);
-    guardarCarrito(carrito);
-    actualizarCarrito();
-
-    alert(`${nombre} añadido al carrito`);
-}
-
-// Función para activar la selección de color
-document.querySelectorAll('.opcion_color').forEach(button => {
-    button.addEventListener('click', () => {
-        document.querySelectorAll('.opcion_color').forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-    });
-});
-
-// Función para activar la selección de talla
-document.querySelectorAll('.opcion_talla').forEach(button => {
-    button.addEventListener('click', () => {
-        document.querySelectorAll('.opcion_talla').forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-    });
-});
-
-// Event Listener para el botón "Añadir al carrito"
-document.querySelector('.producto_boton').addEventListener('click', agregarAlCarrito);
-
-// Inicializar la actualización del carrito al cargar la página
-actualizarCarrito();

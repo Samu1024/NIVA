@@ -33,7 +33,7 @@
               <input type="text" id="searchInput" placeholder="Buscar producto..." />
             </form>
           </div>
-          <a class="header_link" href="index.html" alt="Cesta de compras">
+          <a class="header_link" href="carrito.html" alt="Cesta de compras">
             <svg
               class="header_icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -78,18 +78,57 @@
         </div>
       </div>
     </header>
+     <br><br><br><br><br>
+     <h1>Tu Carrito</h1>
+  <div id="carrito-container"></div>
+ 
+  <button id="vaciar-carrito" onclick="vaciarCarrito()">Vaciar carrito</button>
+   <br><br>
+  <script>
+    function mostrarCarrito() {
+      const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+      const contenedor = document.getElementById("carrito-container");
+      contenedor.innerHTML = "";
 
-     <!-- ******** CUERPO DE LA PÁGINA DEL CARRITO ******** -->
-    <main class="carrito_container">
-      <h1>Tu Carrito de Compras</h1>
+      if (carrito.length === 0) {
+        contenedor.innerHTML = "<p>El carrito está vacío.</p>";
+        return;
+      }
 
-      <div id="carritoProductos"></div>
+      carrito.forEach((producto, index) => {
+        const div = document.createElement("div");
+        div.className = "item-carrito";
+        div.innerHTML = `
+          <img src="${producto.imagen}" alt="${producto.nombre}" />
+          <h3>${producto.nombre}</h3>
+          <p>Precio: ${producto.precio}</p>
+          <p>Color: ${producto.color}</p>
+          <p>Talla: ${producto.talla}</p>
+          <button onclick="eliminarProducto(${index})">Eliminar</button>
+        `;
+        contenedor.appendChild(div);
+      });
+    }
 
-      <div id="carritoTotal">
-        <p>Total: <span id="totalCarrito">€0.00</span></p>
-        <button id="procederPago">Proceder al pago</button>
-      </div>
-    </main>
+    function eliminarProducto(index) {
+      let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+      carrito.splice(index, 1);
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+      mostrarCarrito();
+    }
+
+    function vaciarCarrito() {
+      localStorage.removeItem("carrito");
+      mostrarCarrito();
+    }
+
+    mostrarCarrito();
+
+ 
+  </script>
+
+
+
 
     <!-- ******** PIE DE PÁGINA ******** -->
     <!-- Contenedor del pie de página con varias secciones de contacto, atención, corporativo y legal -->
