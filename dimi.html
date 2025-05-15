@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yeray Garrido Linares" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script defer src="scripts.js"></script>
+    <title>NIVA - Dimi</title>
+  </head>
+  <body class="dimi_body productos_body">
+    <!-- ******** ENCABEZADO ******** -->
+    <header>
+      <div class="header_container">
+        <div class="header_logo">
+          <a href="index.html"> <img src="assets/img/cabecera/logo.png" alt="Logo de NIVA" /> </a>
+        </div>
+        <nav class="header_nav">
+          <a class="header_link" href="esencia.html">Esencia</a>
+          <a class="header_link" href="plumiferos.html">Plumíferos</a>
+          <a class="header_link" href="historias.html">Historias</a>
+        </nav>
+        <div class="header_container_icons">
+          <div class="search_bar_container" style="display: none;">
+            <form id="searchForm">
+              <input type="text" id="searchInput" placeholder="Buscar producto..." />
+            </form>
+          </div>
+          <a class="header_link" href="carrito.html" alt="Cesta de compras">
+            <svg
+              class="header_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="currentColor"
+            >
+              <path
+                d="M221-120q-27 0-48-16.5T144-179L42-549q-5-19 6.5-35T80-600h190l176-262q5-8 14-13t19-5q10 0 19 5t14 13l176 262h192q20 0 31.5 16t6.5 35L816-179q-8 26-29 42.5T739-120H221Zm-1-80h520l88-320H132l88 320Zm260-80q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM367-600h225L479-768 367-600Zm113 240Z"
+              />
+            </svg>
+          </a>
+          <a class="header_link search_trigger" href="#" alt="Buscar">
+            <svg
+              class="header_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="currentColor"
+            >
+              <path
+                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              />
+            </svg>
+          </a>
+          <a class="header_link" href="index.html" alt="Cuenta">
+            <svg
+              class="header_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="currentColor"
+            >
+              <path
+                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ******** CUERPO DE LA PÁGINA ******** -->
+    <main class="producto_container">
+      <div class="producto_imagen_container">
+        <img class="producto_imagen" src="assets/img/cuerpo/seccion_productos/sport2.png" alt="dimi" />
+      </div>
+      <div class="producto_info">
+        <h1 class="producto_titulo">Dimi</h1>
+        <p class="producto_descripcion">
+          Descubre la elegancia y comodidad de nuestra chaqueta Dimi, diseñada para aquellos que buscan estilo y
+          funcionalidad.
+        </p>
+          
+        <!-- Opciones de color -->
+        <div class="producto_opciones">
+          <h3>Color:</h3>
+          <div class="opciones_color">
+            <button class="opcion_color" data-color="negro">Negro</button>
+            <button class="opcion_color" data-color="gris">Verde</button>
+            <button class="opcion_color" data-color="azul">Naranja</button>
+          </div>
+        </div>
+
+        <!-- Opciones de talla --> 
+        <div class="producto_opciones">
+          <h3>Talla:</h3>
+          <div class="opciones_talla">
+            <button class="opcion_talla" data-talla="s">S</button>
+            <button class="opcion_talla" data-talla="m">M</button>
+            <button class="opcion_talla" data-talla="l">L</button>
+            <button class="opcion_talla" data-talla="xl">XL</button>
+          </div>
+        </div>
+
+        <!-- Precio y botón de compra -->
+        <p class="producto_precio">€ 1.150,00</p>
+        <button class="producto_boton">Añadir al carrito</button>
+
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const botonCarrito = document.querySelector(".producto_boton");
+    botonCarrito.addEventListener("click", () => {
+      const nombre = document.querySelector(".producto_titulo").innerText;
+      const precio = document.querySelector(".producto_precio").innerText;
+      const imagen = document.querySelector(".producto_imagen").src;
+      const color = document.querySelector(".opcion_color.active")?.dataset.color || "sin seleccionar";
+      const talla = document.querySelector(".opcion_talla.active")?.dataset.talla || "sin seleccionar";
+
+      const producto = { nombre, precio, imagen, color, talla };
+
+      // Obtener carrito actual
+      let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+      // Agregar nuevo producto
+      carrito.push(producto);
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+      
+      mostrarNotificacion("Producto añadido al carrito");
+    });
+
+    // Marcar color y talla seleccionados
+    document.querySelectorAll(".opcion_color").forEach(btn =>
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".opcion_color").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+      })
+    );
+
+    document.querySelectorAll(".opcion_talla").forEach(btn =>
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".opcion_talla").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+      })
+    );
+  });
+</script>
+
+<style>
+  .opcion_color.active, .opcion_talla.active {
+    border: 2px solid #333;
+    background-color: #c9a227;
+  }
+</style>
+
+        <!-- Botón para ver el carrito -->
+     <a href="carrito.html" class="header_link"></a>
+    <svg class="header_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+        <!-- SVG del carrito aquí -->
+    </svg>
+    </a>
+      </div>
+    </main>
+
+    <!-- ******** PIE DE PÁGINA ******** -->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_seccion footer_contacto">
+          <h3>Contacta</h3>
+          <p>
+            <a href="tel:+34666666666">
+              <img src="assets/img/pie/telefono.svg" alt="Teléfono" class="footer_icono" /> Llámanos al +34 666 666 666
+            </a>
+          </p>
+          <p>
+            <a href="index.html">
+              <img src="assets/img/pie/boutique.svg" alt="Boutiques" class="footer_icono" /> Encontrar boutiques
+            </a>
+          </p>
+          <p>
+            <a href="formulario.html">
+              <img src="assets/img/pie/pedirCita.svg" alt="Reserva una cita" class="footer_icono" /> Reserva una cita
+            </a>
+          </p>
+        </div>
+        <div class="footer_seccion footer_atencion">
+          <h3>Atención al Cliente</h3>
+          <p><a href="index.html">Preguntas frecuentes</a></p>
+          <p><a href="index.html">Rastrear pedidos y solicitudes</a></p>
+          <p><a href="index.html">Servicios de la Boutique</a></p>
+          <p><a href="index.html">Verificación del código del producto</a></p>
+        </div>
+        <div class="footer_seccion footer_corporativo">
+          <h3>Corporativo</h3>
+          <p><a href="index.html">Sostenibilidad</a></p>
+          <p><a href="index.html">NIVA Materials</a></p>
+        </div>
+        <div class="footer_seccion footer_legal">
+          <h3>Legal</h3>
+          <p><a href="index.html">Política De Privacidad Y Cookies</a></p>
+          <p><a href="index.html">Configuración De Cookies</a></p>
+          <p><a href="index.html">Área Legal</a></p>
+        </div>
+      </div>
+      <div class="footer_redes">
+        <a href="index.html">
+          <img class="footer_redes_icon" src="assets/img/pie/redes/facebook.png" alt="Facebook" />
+        </a>
+        <a href="index.html">
+          <img class="footer_redes_icon" src="assets/img/pie/redes/instagram.png" alt="Instagram" />
+        </a>
+        <a href="index.html">
+          <img class="footer_redes_icon" src="assets/img/pie/redes/x.png" alt="Twitter" />
+        </a>
+      </div>
+      <div class="footer_copyright">&copy; 2024 NIVA. Todos los derechos reservados.</div>
+    </footer>
+  </body>
+</html>

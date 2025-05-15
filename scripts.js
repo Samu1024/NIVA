@@ -146,8 +146,9 @@ const searchIcon = document.querySelector('.search_trigger');
       'sport':'sport.html',
       'esencia':'esencia.html',
       'historias':'historias.html',
-      
-    
+      'carrito':'carrito.html',
+      'dimi':'dimi.html',
+      'timor':'timor.html',
     };
 
     for (let clave in productos) {
