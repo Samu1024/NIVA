@@ -178,3 +178,4 @@ const searchIcon = document.querySelector('.search_trigger');
   }, 3000);
 }
 
+
