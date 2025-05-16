@@ -600,7 +600,7 @@ footer {
 .esencia-contenedor {
   display: flex;
   align-items: flex-start;
-  margin: 20px;
+  margin: 0px;
   padding: 20px;
   position: relative;
   opacity: 0; /* Inicialmente invisible */
@@ -612,7 +612,8 @@ footer {
 
 .imagen{
 display: flex;
-height: 600px;
+height: 550px;
+width: 50vw;
 }
 
 
