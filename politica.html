@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <script defer src="scripts.js"></script>
-  <link rel="stylesheet" href="styles.css"> 
-  <title>NIVA - Formulario</title>
-</head>
-<body>
- <!-- ******** ENCABEZADO ******** -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yeray Garrido Linares" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script defer src="scripts.js"></script>
+    <title>NIVA - Inicio</title>
+  </head>
+  <body>
+    <!-- ******** ENCABEZADO ******** -->
     <!-- Contenedor principal del encabezado, incluye logo, navegación y enlaces-->
     <header>
       <div class="header_container">
@@ -26,6 +27,7 @@
         </nav>
         <!-- Enlaces adicionales con iconos (cesta, búsqueda, cuenta) -->
         <div class="header_container_icons">
+
           <div class="search_bar_container" style="display: none;">
             <form id="searchForm">
               <input type="text" id="searchInput" placeholder="Buscar producto..." />
@@ -45,7 +47,7 @@
               />
             </svg>
           </a>
-          <a class="header_link" href="index.html" alt="Buscar">
+          <a class="header_link search_trigger" href="#" alt="Buscar">
             <svg
               class="header_icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +61,7 @@
               />
             </svg>
           </a>
-          <a class="header_link search_trigger" href="#" alt="Cuenta">
+          <a class="header_link" href="index.html" alt="Cuenta">
             <svg
               class="header_icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -76,30 +78,36 @@
         </div>
       </div>
     </header>
+     <br><br><br><br><br><br>
+    <!-- Aviso Legal Académico -->
+  <div class="footer_aviso_legal" style="padding: 20px; font-size: 0.85em; line-height: 1.5; max-width: 1200px; margin: 0 auto; color: #555;">
+    <h4>AVISO LEGAL - PROYECTO ACADÉMICO</h4>
+    <p>Esta plataforma de comercio electrónico constituye un PROYECTO ACADÉMICO desarrollado por estudiantes de primer curso del Grado Superior en Desarrollo de Aplicaciones Multiplataforma y Marketing y Publicidad de MEDAC durante el curso 2024/2025.</p>
 
-  <main>
-    <br><br><br><br><br>
-    <h2 style="text-align: center;">Reserva tu cita aquí</h2>
-    <br>
-    <form  class="formulario" action="enviar_cita.php" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required><br><br>
+    <strong>DECLARACIÓN DE CARÁCTER FICTICIO:</strong>
+    <ul>
+      <li>La marca, productos, servicios y entidad comercial presentados en este sitio web son completamente FICTICIOS y han sido creados con fines exclusivamente educativos.</li>
+      <li>Esta web NO representa una empresa real ni realiza actividad comercial alguna.</li>
+      <li>No se efectúan transacciones económicas reales ni se recopilan datos personales con fines comerciales.</li>
+    </ul>
 
-      <label for="email">Correo Electrónico:</label>
-      <input type="email" id="email" name="email" required><br><br>
+    <strong>PROPIEDAD INTELECTUAL:</strong>
+    <ul>
+      <li>Los elementos visuales, textuales y audiovisuales utilizados en este proyecto tienen un propósito EXCLUSIVAMENTE ACADÉMICO y DIDÁCTICO, amparado bajo el derecho de cita con fines educativos.</li>
+      <li>Este sitio web no tiene finalidad comercial y se utiliza únicamente como ejercicio práctico en un entorno educativo controlado.</li>
+      <li>Se reconoce la propiedad intelectual original de todos los recursos utilizados. Los titulares de derechos que identifiquen contenido de su propiedad pueden contactar con <a href="mailto:ALUMNOMKT@alu.medac.es">ALUMNOMKT@alu.medac.es</a> / <a href="mailto:ALUMNODAM@alu.medac.es">ALUMNODAM@alu.medac.es</a> para solicitar su retirada inmediata.</li>
+      <li>Este uso limitado y con fines estrictamente académicos se realiza sin ánimo de lucro ni de perjudicar los intereses de los titulares originales.</li>
+    </ul>
 
-      <label for="fecha">Fecha y Hora de la Cita:</label>
-      <input type="datetime-local" id="fecha" name="fecha" required><br><br>
+    <strong>EXENCIÓN DE RESPONSABILIDAD:</strong>
+    <p>Ni los estudiantes creadores, ni el profesorado, ni la institución educativa asumen responsabilidad alguna por el uso indebido o interpretación errónea del contenido de este sitio.</p>
 
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+    <p>En caso de duda o consulta relacionada con este proyecto académico, o para solicitar la retirada de cualquier contenido, puede contactar con <a href="mailto:ALUMNOMKT@alu.medac.es">ALUMNOMKT@alu.medac.es</a> / <a href="mailto:ALUMNODAM@alu.medac.es">ALUMNODAM@alu.medac.es</a>.</p>
+  </div>
 
-      <button type="submit">Enviar</button>
-    </form>
-  </main>
   <br><br><br>
 
-  <!-- ******** PIE DE PÁGINA ******** -->
+   <!-- ******** PIE DE PÁGINA ******** -->
     <!-- Contenedor del pie de página con varias secciones de contacto, atención, corporativo y legal -->
     <footer>
       <div class="footer_container">
@@ -141,7 +149,7 @@
           <h3>Legal</h3>
           <p><a href="index.html">Política De Privacidad Y Cookies</a></p>
           <p><a href="index.html">Configuración De Cookies</a></p>
-          <p><a href="politica.html">Área Legal</a></p>
+          <p><a href="index.html">Àrea Legal</a></p>
         </div>
       </div>
       <!-- Sección de Redes Sociales -->
@@ -161,5 +169,4 @@
     </footer>
   </body>
 </html>
-</body>
-</html>
+
