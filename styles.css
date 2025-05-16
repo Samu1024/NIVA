@@ -2279,3 +2279,111 @@ h5{
   color: #b9a873;
   margin-top: 0.3rem;
 }
+
+/*responsive index*/
+@media (max-width: 1024px) {
+  .imagen_contenedor {
+    right: 10;
+    justify-content: center;
+  }
+
+  .recuadro_azul {
+    right: 15%;
+    top: 10%;
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    height: 400px;
+    font-size: 2rem;
+  }
+
+  .imagen_sport25 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .fila_imagenes_sin_margen {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bloque_imagen {
+    width: 100%;
+  }
+
+  .contenido_encima_imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .boton_borde_blanco {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+
+  .titulo_encima {
+    font-size: 2rem;
+    margin-top: 80px;
+  }
+
+  .galeria_4_imagenes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .galeria_4_imagenes img {
+    flex: 1 1 50%;
+    width: 100%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .recuadro_azul {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .recuadro_azul h2 {
+    font-size: 2rem;
+  }
+
+  .texto_colaboracion {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .boton_sport25 {
+    padding: 14px 20px;
+    font-size: 0.9rem;
+  }
+
+  .contenido_encima_imagen {
+    top: 55%;
+  }
+
+  .boton_borde_blanco {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+
+  .titulo_encima {
+    font-size: 1.8rem;
+    margin-top: 60px;
+  }
+
+  .texto_stmoritz h2 {
+    font-size: 2rem;
+  }
+
+  .texto_stmoritz h3 {
+    font-size: 1.2rem;
+  }
+
+  .galeria_4_imagenes img {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
