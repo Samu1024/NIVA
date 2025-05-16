@@ -2085,3 +2085,195 @@ h5{
 #cerrar-detalles {
   z-index: 10;
 }
+
+/*nuevo diseño del index*/
+
+.coleccion_sport25 {
+  background-color: #f9f6f1;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor_sport25 {
+  max-width: 1000px;
+  text-align: center;
+  position: relative;
+}
+
+.imagen_contenedor {
+   position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: visible;
+  display: flex;
+  justify-content: flex-start; /* Alinea la imagen a la izquierda */
+  right: 25%;
+}
+
+.imagen_sport25 {
+  width: 640px; /* Tamaño definido para que no sea tan enorme */
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+
+}
+
+.recuadro_azul {
+  position: absolute;
+  top: 30%; /* Centramos más verticalmente */
+  right: -40%; /* Alineado a la derecha con espacio */
+  background-color: #202559;
+  color: #f1c40f;
+  padding: 2rem;
+  font-size: 3.6rem;
+  font-weight: bold;
+  max-width: 350px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 150vw;
+  height: 350px;
+ 
+}
+
+.recuadro_azul h2 {
+  margin: 20px;
+ 
+  font-size: 2.9rem; /* Texto más grande */
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.subtexto_sport25 {
+ font-size: 0.9rem;
+  color: #b08d5c;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.boton_sport25 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 18px 30px;
+  border: 2px solid #c9a227;
+  background-color: transparent;
+  color: #202559;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.boton_sport25:hover {
+  background-color: #c9a227;
+  color: #202559;
+}
+
+.texto_colaboracion {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #c9a227;
+}
+
+.fila_imagenes_sin_margen {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 99vw;
+  overflow: hidden;
+  
+}
+
+.bloque_imagen {
+  position: relative;
+  flex: 1;
+  margin: 0;
+  
+}
+
+.bloque_imagen img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  vertical-align: top;
+  display: block;
+}
+
+.contenido_encima_imagen {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.boton_borde_blanco {
+  background: transparent;
+  border: 2px solid white;
+  color: #c9a227;
+  padding: 14px 28px; /* AUMENTADO */
+  font-size: 2.2rem;  /* AUMENTADO */
+  text-decoration: none;
+  border-radius: 30px;  /* LIGERAMENTE MÁS REDONDO */
+  margin-bottom: 12px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.boton_borde_blanco:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.titulo_encima {
+  font-size: 3.3rem;
+  padding: 4px 10px;
+  margin-top: 250px;
+}
+
+/*galeria de imagenes inicio*/
+.galeria_4_imagenes {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.galeria_4_imagenes img {
+  flex: 1 1 25%;
+  width: 8%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Texto debajo de la galería */
+.texto_stmoritz {
+  text-align: center;
+  margin-top: 2rem;
+ 
+}
+
+.texto_stmoritz h2 {
+  font-size: 3rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #b9a873; /* similar al dorado de la imagen */
+}
+
+.texto_stmoritz h3 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+  color: #202559; /* azul oscuro */
+}
+
+.texto_stmoritz p {
+  font-size: 1rem;
+  color: #b9a873;
+  margin-top: 0.3rem;
+}
