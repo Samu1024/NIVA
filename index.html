@@ -168,6 +168,75 @@
   <p>46°29′50″N 9°50′16″E</p>
 </div>
 <br><br>
+
+<!-- Pop-up pequeño para ingresar correo -->
+<div id="popup" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+">
+  <div style="
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  ">
+    <!-- Botón X para cerrar -->
+    <span onclick="cerrarPopup()" style="
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      font-size: 25px;
+      cursor: pointer;
+      color: #000000;
+    ">&times;</span>
+
+    <h4 style="margin-top: 10px; color: #c9a227;" >Recibe informacion sobre la próxima NIVA experientia</h4>
+    <input type="email" placeholder="Ingresa tu correo" style="
+      width: 90%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 12px;
+      color: #202559;
+    ">
+    <br>
+    <button onclick="cerrarPopup()" style="
+      padding: 8px 16px;
+      background-color: #202559;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    ">Enviar</button>
+  </div>
+</div>
+
+<script>
+  // Mostrar el pop-up 8 segundos después de cargar la página
+  setTimeout(function() {
+    document.getElementById("popup").style.display = "flex";
+  }, 8000);
+
+  function cerrarPopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
+
+
+
+
+
+
+
     <!-- ******** PIE DE PÁGINA ******** -->
     <!-- Contenedor del pie de página con varias secciones de contacto, atención, corporativo y legal -->
     <footer>
