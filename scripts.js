@@ -179,3 +179,17 @@ const searchIcon = document.querySelector('.search_trigger');
 }
 
 
+//cookies
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.getElementById("cookie-banner");
+  const btn = document.getElementById("accept-cookies");
+
+  if (!localStorage.getItem("cookies-accepted")) {
+    banner.classList.remove("hidden");
+  }
+
+  btn.addEventListener("click", function () {
+    localStorage.setItem("cookies-accepted", "true");
+    banner.classList.add("hidden");
+  });
+});
