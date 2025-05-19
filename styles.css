@@ -619,7 +619,7 @@ footer {
 .fila {
   display: flex;
   flex-wrap: nowrap;
-  width: 127%;
+  width: 126%;
   margin: 0;
   padding: 0;
 }
@@ -630,7 +630,7 @@ footer {
 .imagen {
   flex: 1;
   width: 80%;
-  height: 580px;
+  height: 750px;
   margin: 0;
   padding: 0;
   overflow: hidden;
