@@ -2418,3 +2418,70 @@ h5{
 .cookie-banner.hidden {
   display: none;
 }
+
+
+
+/* ======================== */
+/* RESPONSIVE ENHANCEMENTS  */
+/* ======================== */
+
+/* Carrito en móvil */
+@media (max-width: 768px) {
+  #carrito-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_portada .texto_portada h1 {
+    font-size: 1.5rem;
+    width: 90vw;
+  }
+
+  .recuadro_azul {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .imagen_contenedor {
+    flex-direction: column;
+    right: 0;
+    justify-content: center;
+  }
+
+  .boton_borde_blanco {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  .titulo_encima {
+    font-size: 2rem;
+    margin-top: 150px;
+  }
+
+  .fila_imagenes_sin_margen {
+    flex-direction: column;
+  }
+
+  .galeria_4_imagenes {
+    flex-wrap: wrap;
+  }
+
+  .galeria_4_imagenes img {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .formulario {
+    width: 90vw;
+  }
+}
+
+/* Sección productos con grid adaptable */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
